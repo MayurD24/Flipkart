@@ -29,66 +29,63 @@ import UtilClasses.Util1;
 public class verifyUserCanCreateNewAddress {
 
 	static WebDriver driver;
-	
+
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports reports;
 	ExtentTest extentTest;
-	
+
 	HomePage hp;
 	ProfilePage pp;
-	
+
 	@BeforeClass
 	@Parameters("browser")
 	public void beforeClass(String browser) throws IOException {
 		htmlReporter = Base1.getExtentHtmlReporter();
 		reports = Base1.getExtentReports();
 		extentTest = Base1.getExtentTest("verifyUserCanCreateNewAddress");
-		
+
 		driver = Base1.getDriver(browser);
 	}
-	
+
 	@BeforeMethod
 	public void beforeMethod() {
 		hp = new HomePage(driver);
 		pp = new ProfilePage(driver);
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void verifyUserCanOpenMyProfilePage() {
 		hp.hoverToProfileName();
 		hp.clickOnMyProfile();
 		String profileText = pp.getProfileText();
-		Assert.assertEquals(profileText, "Personal Information","ProfileText is not matching");
+		Assert.assertEquals(profileText, "Personal Information", "ProfileText is not matching");
 	}
-	
-	@DataProvider(name="Address")
+
+	@DataProvider(name = "Address")
 	public Object[][] getData() {
-		Object[][] address = {{"Mayur","9921220034","423601","Takli Road","Om Nagar"},{"Tejas","7020637361","423601","Shinde Nagar","Lodha Mangal Karyalaya"}};
+		Object[][] address = { { "Mayur", "9921220034", "423601", "Takli Road", "Om Nagar" },
+				{ "Tejas", "7020637361", "423601", "Shinde Nagar", "Lodha Mangal Karyalaya" } };
 		return address;
 	}
-	
-	@Test(priority=2, dataProvider="Address")
-	public void verifyUserCanCreateNewAddresses(String name, String phone, String pincode, String locality, String fAddress) {
+
+	@Test(priority = 2, dataProvider = "Address")
+	public void verifyUserCanCreateNewAddresses(String name, String phone, String pincode, String locality,
+			String fAddress) {
 		pp.clickOnManageAddress();
-		
-		List<String> addressDetails = Arrays.asList(name,phone,pincode,locality,fAddress);
+
+		List<String> addressDetails = Arrays.asList(name, phone, pincode, locality, fAddress);
 		pp.saveNewAddress(addressDetails);
 	}
-	
+
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
-		if(result.getStatus() ==  ITestResult.SUCCESS) {
-			extentTest.log(Status.PASS, "Test : "+ result.getName());
-		}
-		else if(result.getStatus() == ITestResult.FAILURE) {
+		if (result.getStatus() == ITestResult.FAILURE) {
 			String path = Util1.getScreenshot(driver, result.getName());
-			extentTest.log(Status.FAIL, "Test : "+ result.getName(), MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-		}
-		else if(result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(Status.SKIP, "Test : "+ result.getName());
+			extentTest.log(Status.FAIL, "Test Failed : " + result.getName(),
+					MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 		}
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		reports.flush();

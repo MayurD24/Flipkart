@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Failed]]>
+    </line>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
+    <line>
+      <![CDATA[Test Started]]>
+    </line>
+    <line>
+      <![CDATA[Test Passed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-13T11:27:56 IST" name="Suite" finished-at="2022-10-13T11:29:14 IST" duration-ms="78120">
+  <suite started-at="2022-10-13T12:27:00 IST" name="Suite" finished-at="2022-10-13T12:28:17 IST" duration-ms="77442">
     <groups>
     </groups>
-    <test started-at="2022-10-13T11:27:56 IST" name="ChromeTest" finished-at="2022-10-13T11:29:14 IST" duration-ms="78120">
+    <test started-at="2022-10-13T12:27:00 IST" name="ChromeTest" finished-at="2022-10-13T12:28:17 IST" duration-ms="77442">
       <class name="TestClasses.verifyUserCanCreateNewAddress">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:27 IST" name="beforeClass" finished-at="2022-10-13T11:28:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="beforeClass" finished-at="2022-10-13T12:28:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,82 +54,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:27 IST" name="beforeMethod" finished-at="2022-10-13T11:28:27 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="beforeMethod" finished-at="2022-10-13T12:28:14 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanOpenMyProfilePage()[pri:1, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:27 IST" name="verifyUserCanOpenMyProfilePage" finished-at="2022-10-13T11:28:43 IST" duration-ms="15613" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (bf2baf197780460625e3973d97cce0c7)] -> xpath: //div[text()='My Profile']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (bf2baf197780460625e3973d97cce0c7)] -> xpath: //div[text()='My Profile']] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at UtilClasses.Util1.waitTillElementAppear(Util1.java:30)
-at PomClasses.HomePage.hoverToProfileName(HomePage.java:82)
-at TestClasses.verifyUserCanCreateNewAddress.verifyUserCanOpenMyProfilePage(verifyUserCanCreateNewAddress.java:58)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="verifyUserCanOpenMyProfilePage()[pri:1, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="verifyUserCanOpenMyProfilePage" finished-at="2022-10-13T12:28:14 IST" duration-ms="640" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanOpenMyProfilePage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:43 IST" name="afterMethod" finished-at="2022-10-13T11:28:43 IST" duration-ms="508" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="afterMethod" finished-at="2022-10-13T12:28:14 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanOpenMyProfilePage status=FAILURE method=verifyUserCanCreateNewAddress.verifyUserCanOpenMyProfilePage()[pri:1, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanOpenMyProfilePage status=SUCCESS method=verifyUserCanCreateNewAddress.verifyUserCanOpenMyProfilePage()[pri:1, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d] output=Test Started]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:43 IST" name="beforeMethod" finished-at="2022-10-13T11:28:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="beforeMethod" finished-at="2022-10-13T12:28:14 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:28:43 IST" name="verifyUserCanCreateNewAddresses" data-provider="Address" finished-at="2022-10-13T11:29:03 IST" duration-ms="20168" status="FAIL">
+        <test-method signature="verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:14 IST" name="verifyUserCanCreateNewAddresses" data-provider="Address" finished-at="2022-10-13T12:28:16 IST" duration-ms="1383" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,101 +111,31 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Manage Addresses']' (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Manage Addresses']' (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at UtilClasses.Util1.waitTillElementAppear(Util1.java:30)
-at PomClasses.ProfilePage.clickOnManageAddress(ProfilePage.java:45)
-at TestClasses.verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(verifyUserCanCreateNewAddress.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Manage Addresses']"}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2baf197780460625e3973d97cce0c7, findElement {using=xpath, value=//div[text()='Manage Addresses']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateNewAddresses -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:29:03 IST" name="afterMethod" finished-at="2022-10-13T11:29:04 IST" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:16 IST" name="afterMethod" finished-at="2022-10-13T12:28:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanCreateNewAddresses status=FAILURE method=verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanCreateNewAddresses status=SUCCESS method=verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d] output=Test Started]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:29:04 IST" name="beforeMethod" finished-at="2022-10-13T11:29:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:16 IST" name="beforeMethod" finished-at="2022-10-13T12:28:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:29:04 IST" name="verifyUserCanCreateNewAddresses" data-provider="Address" finished-at="2022-10-13T11:29:14 IST" duration-ms="10235" status="FAIL">
+        <test-method signature="verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:16 IST" name="verifyUserCanCreateNewAddresses" data-provider="Address" finished-at="2022-10-13T12:28:17 IST" duration-ms="1191" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -243,183 +163,33 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2baf197780460625e3973d97cce0c7, findElement {using=xpath, value=//div[text()='Manage Addresses']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2baf197780460625e3973d97cce0c7, findElement {using=xpath, value=//div[text()='Manage Addresses']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4218)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:298)
-at java.base/java.lang.String.valueOf(String.java:4218)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at UtilClasses.Util1.waitTillElementAppear(Util1.java:30)
-at PomClasses.ProfilePage.clickOnManageAddress(ProfilePage.java:45)
-at TestClasses.verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(verifyUserCanCreateNewAddress.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateNewAddresses -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:29:14 IST" name="afterMethod" finished-at="2022-10-13T11:29:14 IST" duration-ms="4" status="FAIL">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:17 IST" name="afterMethod" finished-at="2022-10-13T12:28:17 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanCreateNewAddresses status=FAILURE method=verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanCreateNewAddresses status=SUCCESS method=verifyUserCanCreateNewAddress.verifyUserCanCreateNewAddresses(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d] output=Test Started]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2baf197780460625e3973d97cce0c7, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=106.0.5249.103)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'MAYUR', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf2baf197780460625e3973d97cce0c7, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\OMSAI\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63715}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63715/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf2baf197780460625e3973d97cce0c7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:331)
-at UtilClasses.Util1.getScreenshot(Util1.java:46)
-at TestClasses.verifyUserCanCreateNewAddress.afterMethod(verifyUserCanCreateNewAddress.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:785)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:761)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@34e9fd99]" started-at="2022-10-13T11:29:14 IST" name="afterClass" finished-at="2022-10-13T11:29:14 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanCreateNewAddress@54d9d12d]" started-at="2022-10-13T12:28:17 IST" name="afterClass" finished-at="2022-10-13T12:28:17 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- TestClasses.verifyUserCanCreateNewAddress -->
       <class name="TestClasses.verifyUserCanGetLowestProductPriceFromEachPage">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:20 IST" name="beforeClass" finished-at="2022-10-13T11:28:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:07 IST" name="beforeClass" finished-at="2022-10-13T12:28:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -430,51 +200,63 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:20 IST" name="beforeMethod" finished-at="2022-10-13T11:28:20 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:07 IST" name="beforeMethod" finished-at="2022-10-13T12:28:07 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="VerifyUserCanSearchProduct()[pri:1, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:20 IST" name="VerifyUserCanSearchProduct" finished-at="2022-10-13T11:28:21 IST" duration-ms="1680" status="PASS">
+        <test-method signature="VerifyUserCanSearchProduct()[pri:1, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:07 IST" name="VerifyUserCanSearchProduct" finished-at="2022-10-13T12:28:08 IST" duration-ms="1376" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- VerifyUserCanSearchProduct -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:21 IST" name="afterMethod" finished-at="2022-10-13T11:28:21 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:08 IST" name="afterMethod" finished-at="2022-10-13T12:28:08 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyUserCanSearchProduct status=SUCCESS method=verifyUserCanGetLowestProductPriceFromEachPage.VerifyUserCanSearchProduct()[pri:1, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyUserCanSearchProduct status=SUCCESS method=verifyUserCanGetLowestProductPriceFromEachPage.VerifyUserCanSearchProduct()[pri:1, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d] output=Test Started]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:21 IST" name="beforeMethod" finished-at="2022-10-13T11:28:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:08 IST" name="beforeMethod" finished-at="2022-10-13T12:28:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanGetLowestProductPriceFromEachPages()[pri:2, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:21 IST" name="verifyUserCanGetLowestProductPriceFromEachPages" finished-at="2022-10-13T11:28:27 IST" duration-ms="5504" status="PASS">
+        <test-method signature="verifyUserCanGetLowestProductPriceFromEachPages()[pri:2, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:08 IST" name="verifyUserCanGetLowestProductPriceFromEachPages" finished-at="2022-10-13T12:28:13 IST" duration-ms="5448" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanGetLowestProductPriceFromEachPages -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:27 IST" name="afterMethod" finished-at="2022-10-13T11:28:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:13 IST" name="afterMethod" finished-at="2022-10-13T12:28:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanGetLowestProductPriceFromEachPages status=SUCCESS method=verifyUserCanGetLowestProductPriceFromEachPage.verifyUserCanGetLowestProductPriceFromEachPages()[pri:2, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanGetLowestProductPriceFromEachPages status=SUCCESS method=verifyUserCanGetLowestProductPriceFromEachPage.verifyUserCanGetLowestProductPriceFromEachPages()[pri:2, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d] output=Test Started]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@45752059]" started-at="2022-10-13T11:28:27 IST" name="afterClass" finished-at="2022-10-13T11:28:27 IST" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanGetLowestProductPriceFromEachPage@3c41ed1d]" started-at="2022-10-13T12:28:13 IST" name="afterClass" finished-at="2022-10-13T12:28:14 IST" duration-ms="138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- TestClasses.verifyUserCanGetLowestProductPriceFromEachPage -->
       <class name="TestClasses.verifyUserCanLogin">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28]" started-at="2022-10-13T11:27:56 IST" name="beforeClass" finished-at="2022-10-13T11:28:15 IST" duration-ms="18539" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480]" started-at="2022-10-13T12:27:00 IST" name="beforeClass" finished-at="2022-10-13T12:28:03 IST" duration-ms="63360" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -485,11 +267,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28]" started-at="2022-10-13T11:28:15 IST" name="beforeMethod" finished-at="2022-10-13T11:28:15 IST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480]" started-at="2022-10-13T12:28:03 IST" name="beforeMethod" finished-at="2022-10-13T12:28:03 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserCanLogIn()[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28]" started-at="2022-10-13T11:28:15 IST" name="verifyUserCanLogIn" finished-at="2022-10-13T11:28:18 IST" duration-ms="3075" status="FAIL">
+        <test-method signature="verifyUserCanLogIn()[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480]" started-at="2022-10-13T12:28:03 IST" name="verifyUserCanLogIn" finished-at="2022-10-13T12:28:06 IST" duration-ms="2694" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Profile name is not matching expected [MAYU] but found [MAYUR]]]>
@@ -534,20 +316,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[Test Started]]>
+            </line>
+            <line>
+              <![CDATA[Test Failed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyUserCanLogIn -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28]" started-at="2022-10-13T11:28:18 IST" name="afterMethod" finished-at="2022-10-13T11:28:19 IST" duration-ms="1295" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480]" started-at="2022-10-13T12:28:06 IST" name="afterMethod" finished-at="2022-10-13T12:28:06 IST" duration-ms="492" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanLogIn status=FAILURE method=verifyUserCanLogin.verifyUserCanLogIn()[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanLogIn status=FAILURE method=verifyUserCanLogin.verifyUserCanLogIn()[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480] output=Test Started]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanLogin@557caf28]" started-at="2022-10-13T11:28:19 IST" name="afterClass" finished-at="2022-10-13T11:28:20 IST" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.verifyUserCanLogin@6c6cb480]" started-at="2022-10-13T12:28:06 IST" name="afterClass" finished-at="2022-10-13T12:28:07 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -26,30 +26,30 @@ import UtilClasses.Util1;
 public class verifyUserCanLogin {
 
 	static WebDriver driver;
-	
+
 	ExtentHtmlReporter htmlReporter;
 	ExtentReports reports;
 	ExtentTest extentTest;
-	
+
 	LoginPage lp;
 	HomePage hp;
-	
+
 	@BeforeClass
 	@Parameters("browser")
 	public void beforeClass(String browser) throws IOException {
 		htmlReporter = Base1.getExtentHtmlReporter();
 		reports = Base1.getExtentReports();
 		extentTest = Base1.getExtentTest("verifyUserCanLogin");
-		
+
 		driver = Base1.getDriver(browser);
 	}
-	
+
 	@BeforeMethod
 	public void beforeMethod() {
 		lp = new LoginPage(driver);
 		hp = new HomePage(driver);
 	}
-	
+
 	@Test
 	public void verifyUserCanLogIn() throws InterruptedException, IOException {
 		lp.enterEmailID();
@@ -57,24 +57,19 @@ public class verifyUserCanLogin {
 		lp.clickLoginBtn();
 		hp = new HomePage(driver);
 		String profileName = hp.getProfileName();
-	
-		Assert.assertEquals(profileName, "MAYU", "Profile name is not matching");
+		//Check your Profile Name
+		Assert.assertEquals(profileName, "MAYUR", "Profile name is not matching");
 	}
-	
+
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
-		if(result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(Status.PASS, "Test : "+ result.getName());
-		}
-		else if(result.getStatus() == ITestResult.FAILURE) {
+		if (result.getStatus() == ITestResult.FAILURE) {
 			String path = Util1.getScreenshot(driver, result.getName());
-			extentTest.log(Status.FAIL, "Test : "+ result.getName(),MediaEntityBuilder.createScreenCaptureFromPath(path).build());
-		}
-		else if(result.getStatus() == ITestResult.SKIP) {
-			extentTest.log(Status.SKIP, "Test : "+ result.getName());
+			extentTest.log(Status.FAIL, "Test Failed : " + result.getName(),
+					MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 		}
 	}
-	
+
 	@AfterClass
 	public void afterClass() {
 		reports.flush();

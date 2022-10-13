@@ -29,9 +29,11 @@ public class LoginPage extends Util1 {
 	}
 	
 	public void enterEmailID() throws IOException {
+		//Insert your Username in configuration file
 		emailID.sendKeys(Util1.getConfigData("username"));
 	}
 	public void enterPassword() throws IOException {
+		//Insert your Password in configuration file
 		password.sendKeys(Util1.getConfigData("password"));
 	}
 	public void clickLoginBtn() {

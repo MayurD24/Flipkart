@@ -72,5 +72,8 @@ public class Base1 extends Util1{
 		return extentTest;
 	}
 	
+	public static ExtentTest getAlreadyExistingExtentTest() {
+		return extentTest;
+	}
 	
 }
