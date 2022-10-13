@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestClasses.verifyUserCanLogin">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyUserCanLogIn"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- TestClasses.verifyUserCanLogin -->
+      <class name="TestClasses.verifyUserCanCreateNewAddress">
+        <methods>
+          <include name="verifyUserCanCreateNewAddresses" invocation-numbers="0 1"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserCanOpenMyProfilePage"/>
+        </methods>
+      </class> <!-- TestClasses.verifyUserCanCreateNewAddress -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
