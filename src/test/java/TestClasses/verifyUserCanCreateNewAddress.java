@@ -63,8 +63,8 @@ public class verifyUserCanCreateNewAddress {
 
 	@DataProvider(name = "Address")
 	public Object[][] getData() {
-		Object[][] address = { { "Mayur", "9921220034", "423601", "Takli Road", "Om Nagar" },
-				{ "Tejas", "7020637361", "423601", "Shinde Nagar", "Lodha Mangal Karyalaya" } };
+		Object[][] address = { { "Rahul", "9925278965", "400001", "Mahamta Gandhi Road", "Ram Nagar" },
+				{ "Tejas", "9524362211", "400402", "Vishal Nagar", "Kalasai Mangal Karyalaya" } };
 		return address;
 	}
 
