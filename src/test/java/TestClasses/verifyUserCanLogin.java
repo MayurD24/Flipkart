@@ -58,7 +58,7 @@ public class verifyUserCanLogin {
 		hp = new HomePage(driver);
 		String profileName = hp.getProfileName();
 		//Check your Profile Name
-		Assert.assertEquals(profileName, "MAYUR", "Profile name is not matching");
+		Assert.assertEquals(profileName, "Insert Your Profile Name", "Profile name is not matching");
 	}
 
 	@AfterMethod
