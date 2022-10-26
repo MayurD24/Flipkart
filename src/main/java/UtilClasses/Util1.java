@@ -7,6 +7,7 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -47,5 +48,10 @@ public class Util1 {
 		File dest = new File(path);
 		FileHandler.copy(source, dest);
 		return path;
+	}
+	
+	public static String JEgetText(WebDriver driver, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		return (String) js.executeScript("return arguments[0].text;", element);
 	}
 }
